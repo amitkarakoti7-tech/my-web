@@ -1,0 +1,121 @@
+table{
+
+    background-color: rgb(202, 226, 247);
+    padding-top: 10%;
+    box-shadow:10px 10px 10px rgb(144, 102, 196);
+    
+width: 100%;
+height: 100%;
+
+border-radius: 10px;
+
+
+main{
+    
+    }
+    content:normal;
+    mssage{
+        box-shadow: #0035e3;
+        padding-left: 50%;
+    }
+
+main{}
+}
+h1{
+    
+    
+  
+    background-color: rgb(221, 184, 243);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(218, 16, 194);
+    font-size: 250%;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(21, 80, 147);
+    text-align: center;
+}
+
+input[type="text"]{width: 100%}
+input[type="password"]{width:100%}
+input[type="number"]{width: 100%}
+input[type="data"]{width: 100%}
+input[type="time"]{width: 100%}
+input[type="email"]{width: 100%}
+select{width: 100%;}
+
+}
+.textstyle
+{
+   
+    font-size: 50px;
+}
+
+
+
+
+label{
+    margin-bottom: 5px;
+    font-weight: bold;
+   
+}
+textarea{
+    width: 100%;
+  
+    
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+input{
+   
+    
+   
+
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    font-family:sans-serif;
+    background-color: #f0f2f5;
+    border-color: #4e73df;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(78,115,223,0.2);
+
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

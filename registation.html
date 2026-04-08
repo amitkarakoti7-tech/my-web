@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tb.css">
+</head>
+
+
+<style>
+    
+td{display: flex;
+flex-direction: row;
+gap: 15px;
+align-items: flex-start;}
+
+</style>
+
+<nav>
+
+</nav>
+
+<body>
+    <header>
+        <h1> class="textstyle"</h1>
+    </header>
+    
+    <main>
+        <h1>register form</h1>
+        <table border="0" cellpadding="10">
+           
+            <form action="http://tataplay/user/login.php" method="post">
+
+            <tr>
+                <td><label for="forname"></label></td>
+                <td><input title="Type name here " placeholder="Type first name"
+                id="forname"type="text" required></td>
+
+            </tr>
+
+            <tr>
+                <td><ladel for="forage">Age</ladel></td>
+                <td><input title="Type Age here " placeholder="type your age "
+                     id="forage" type="number" required max="40" min="18"></td>
+
+
+            </tr>
+
+            <tr>
+                <td><label >mssage</label></td>
+                <td>
+                    <textarea rows="10" cols="40"></textarea>
+                </td>
+                <tr>
+                    <td><label >gender</label></td>
+                </tr>
+
+                <td>
+                    <div>Male <input type="radio" value="m" name="gender"></div>
+                    <div>Female <input type="radio" value="f" name="gender"></div>
+                    <div>Other <input type="radio" value="o" name="gender"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Hobbi</label></td>
+                <td>
+                    <div>Cricket<input type="checkbox"></div>
+                    <div>Cricket<input type="checkbox"></div>
+                    <div>Cricket<input type="checkbox"></div>
+                </td>
+            </tr>
+           
+                
+
+            <tr>
+                <td><label>Country</label></td>
+                <td>
+                    <select>
+                        <option value="India">India</option>
+                        <option value="Uk">Uk</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="China">China</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td><label>E-mail</label></td>
+                <td>
+                    <input type="email">
+                </td>
+            </tr>
+    
+            <tr>
+                <td><label>Upload <Picture></Picture></label></td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>DOB</label></td>
+                <td>
+                    <input type="data"></td>
+            </tr>
+            <tr>
+                <td><label>Time</label></td>
+                <td>
+                    <input type="time"
+                </td>
+            </tr>
+<tr>
+    <td>
+        <input type="submit"value="Register">
+        <input type="reset">
+    </td>
+</tr>
+</form>
+        </table>
+    </main>
+    <footer></footer>
+</body>
+</html>

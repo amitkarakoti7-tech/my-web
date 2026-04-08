@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(21, 241, 241);
+    header
+    {
+        text-align: center;
+    }
+    main{text-align:center;
+    width:60%;
+margin:auto;
+ caption{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif
+
+ }
+table{
+    background-color: aliceblue;
+    input{
+        background-color: beige;
+    }
+}
+header{
+    font-size: 50px;
+}
+
+}
+  
+ 
+}
+table
+
+{
+    width:100%;
+    border:1px black solid;
+    padding: 30px;
+    border-radius:10px;
+    box-shadow:10px 10px 10px rgb(24, 135, 136);
+
+}
+input[type="text"]{width:100%}
+input[type="password"]{width:100%}
+input[type="submit"]{width:50%;background:teal;color:white;}
+input[type="reset"]{width:40%}
+
+
+}
+.textstyle
+{
+    color:black;
+    font-size:50px;
+    display: flex;
+
+}
