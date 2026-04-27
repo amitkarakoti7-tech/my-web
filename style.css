@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@media (max-width: 600px){
 
+    body{
+        background-color: #bdc6d8;
+        //display: flex;
+    }
+    nav ul li{
+        display: flex;
+    }
+    p{
+        display: none;
+    }
+    .btn {
+        margin-top: 20px;
+        box-sizing: 40px;
+        height: 25px;
+        display: flex;
+
+        .logo{
+            height: 25px;
+            width: 80px;
+        }
+
+    }
+    }
+}
+
+}
+
+.profile-pic{
+    margin: bottem 80%;
+    padding-top: 90px;
+}
 
 *{
     padding: 0px;
@@ -16,7 +48,7 @@ a{
 .logo{
     height: 35px;
     width: 140px;
-    background-image: url(images/ak.jpg);
+    background-image: url(images/aks.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,24 +61,34 @@ nav{
     width: 100%;
     background-color: rgb(32, 4, 57);
     align-items: center;
+    
 }
 
 nav ul{
     gap: 20px;
     display: flex;
+    
 
 }
 
 nav ul li{
     list-style: none;
     color: white;
+    display: flex;
+    
+
+}
+.card-box{
+    
 
 }
 
+
 nav ul li a{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 500;
+    display: flex;
 }
 
 
@@ -65,7 +107,7 @@ nav ul li a{
 
 
 .profile-pic{
-    background-image: url(images/ak.jpg);
+    background-image: url(images/aks.jpeg);
     border-radius: 50%;
     background-size: cover;
     height: 300px;
@@ -99,7 +141,7 @@ img {
 .circle-border {
     width: 0%;
     height: 300px;
-    ;
+
     
     
 
