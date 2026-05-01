@@ -1,112 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@media (max-width: 600px){
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
-    body{
-        background-color: #bdc6d8;
-        //display: flex;
-    }
-    nav ul li{
-        display: flex;
-    }
-    p{
-        display: none;
-    }
-    .btn {
-        margin-top: 20px;
-        box-sizing: 40px;
-        height: 25px;
-        display: flex;
-
-        .logo{
-            height: 25px;
-            width: 80px;
-        }
-
-    }
-    }
-}
-
-}
-
-.profile-pic{
-    margin: bottem 80%;
-    padding-top: 90px;
-}
-
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: poppins;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
-
 }
 
-
-.logo{
-    height: 35px;
-    width: 140px;
-    background-image: url(images/aks.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-nav{
-
+/* NAVBAR */
+nav {
     display: flex;
     justify-content: space-between;
     padding: 12px 70px;
     width: 100%;
     background-color: rgb(32, 4, 57);
     align-items: center;
-    
+    flex-wrap: wrap;
 }
 
-nav ul{
+.logo {
+    height: 40px;
+    width: 120px;
+    background-image: url(images/aks.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav ul {
     gap: 20px;
     display: flex;
-    
-
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
+}
+
+nav ul li a {
     color: white;
-    display: flex;
-    
-
-}
-.card-box{
-    
-
-}
-
-
-nav ul li a{
-    color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 500;
-    display: flex;
 }
 
-
-.hero{
+/* HERO SECTION */
+.hero {
     padding: 25px;
-    background-color: rgba(195, 195, 195, 0);
     margin: 60px auto;
     display: flex;
     gap: 50px;
     width: 85%;
     justify-content: center;
     align-items: center;
-
+    flex-wrap: wrap;
 }
 
-
-
-.profile-pic{
+.profile-pic {
     background-image: url(images/aks.jpeg);
     border-radius: 50%;
     background-size: cover;
@@ -114,39 +66,73 @@ nav ul li a{
     width: 300px;
 }
 
-
-.pic{
+.pic {
     text-align: center;
 }
+
+/* BUTTON */
 .btn {
     background-color: #ff4d94;
     color: white;
-    
     border: none;
-    display: flex;
-    box-sizing: 20%;
-    height: 10%;
-  
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    margin: 20px auto;
     cursor: pointer;
+    border-radius: 5px;
 }
 
+/* IMAGE FIX */
 img {
-   
-    display: flex;
-    height: 100%;
-    border-radius: 100%;
-
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
-.circle-border {
-    width: 0%;
-    height: 300px;
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
 
-    
-    
+    body {
+        background-color: #bdc6d8;
+    }
 
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        width: 95%;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .btn {
+        width: 140px;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    p {
+        display: none;
+    }
+
+    .logo {
+        width: 100px;
+        height: 35px;
+    }
 }
-div
- card-box{
-    
- }
