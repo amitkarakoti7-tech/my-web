@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @keyframes ani {
+            from { transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);}
+            to   { transform: rotateY(360deg) rotateX(30deg) rotateZ(0deg);}
+        }
+
+#container
+{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    margin: auto;
+    text-align: center;
+    perspective: 360px;
+}
+#ask{
+    width: 200px;
+    height: 200px;
+    background-color:aqua;
+    position: relative;
+    top:100px;
+    left:100px;
+    animation:ani 5s linear infinite alternate;
+    backface-visibility: visible;
+    
+
+}
+#ak{
+    width: 200px;
+    backface-visibility: hidden;
+    height: 200px;
+    background-color: antiquewhite;
+    position: relative;
+    top:-100px;
+    left:100px;
+    animation:ani 5s linear infinite alternate;
+
+}
+.pic
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+    </style>
+    <div id="container">
+
+        <div id="ask">
+        <img src="images/aks.jpeg" class="pic">
+            </div>
+
+    <div id="ak">
+        <img src="images/ak.jpg" class="pic">
+    </div>
+    </div>
+
+    
+</body>
+</html>
