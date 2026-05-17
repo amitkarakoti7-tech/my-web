@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header><h1>Color Change Background</h1></header>
+
+<body>  
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        h1{
+            font-family:'Times New Roman', Times, serif;
+            font-weight: 900;
+            background-color: aquamarine;
+            text-align:center;
+        }
+       
+
+            
+        
+        .box{
+            margin: 50px;
+            background-color: aqua;
+            height: 60px;
+            width: 25%;
+            font-size: 20px;
+            font-weight: 750;
+            border-radius: 10px;
+            border-color: aquamarine;
+            cursor: pointer;
+
+            
+            
+        }
+       
+    </style>
+    <script>
+        
+       
+        var b = document.createElement("button")
+        b.innerHTML="rendom button"
+        document.body.appendChild(b)
+         b.className="box"
+        function rendomColor()
+        {
+    
+            document.title="color"
+            var red = Math.round(Math.random()*255)
+            var green = Math.round(Math.random()*255)
+            var blue = Math.round(Math.random()*255)
+            var c = "rgb("+red+","+green+","+blue+")"
+
+            document.body.style.background = c
+        }
+        b.onclick = rendomColor
+    </script>
+    
+</body>
+</html>
