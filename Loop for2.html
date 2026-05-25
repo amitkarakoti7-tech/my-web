@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .pic
+    {
+        width: 30%;
+        box-shadow: 10px 5px 10px gray;
+        margin: 30px;
+        transform: 0.50s;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <h>Loop in HTML (for loop)</h>
+    <script>
+
+        // Creating instance of image class
+
+        document.title="No error"
+        function preload()
+        {
+
+            for(var i = 1;i<=5;i++)
+        {
+            var p = new Image()
+            document.body.appendChild(p)
+            p.className="pic"
+            p.src="images/download (2).jpg"
+
+            p.onmouseover=function()
+            {
+                this.style.width="30%"
+            }
+            p.onmouseout=function()
+            {
+                this.style.width="35%"
+            }
+        }
+        }
+        document.addEventListener("load",preload())
+    </script>
+    
+</body>
+</html>
