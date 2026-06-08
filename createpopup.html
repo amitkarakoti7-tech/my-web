@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.mystyle{
+    width:150px;
+    height:180px;
+    box-shadow: 10px 10px 10px gray;
+    border:1px black solid;
+    padding: 5px;
+    margin: auto;
+    border-radius: 12px;
+    
+}
+.box{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+</style>
+<body>
+    <div class="box">
+        <h1>TimeOut Popup ad</h1>
+    <script>
+        var p = document.createElement("div")
+        var box = document.querySelector(".box")
+        function show()
+        {
+            box.appendChild(p)
+            p.className="mystyle"
+           p.innerHTML ="<button class= 'btn' onclick='closeadd()'>X</button>"
+            
+            p.innerHTML+="<br/><img style='width:100%' src = 'images/ak.jpg'>"
+            setTimeout("closeadd()",5000)
+        }
+        var t = setTimeout("show()",2000)
+
+        function closeadd()
+        {
+            box.removeChild(p)
+        }
+    </script>
+    </div>
+
+</body>
+</html>

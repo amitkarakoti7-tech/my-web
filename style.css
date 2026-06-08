@@ -6,9 +6,17 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 a {
     text-decoration: none;
+}
+header{
+    background: linear-gradient(0deg,lch(60.87% 81.08 311.71) 0%, rgba(233, 133, 195, 1) 100%);
 }
 
 /* NAVBAR */
@@ -17,18 +25,25 @@ nav {
     justify-content: space-between;
     padding: 12px 70px;
     width: 100%;
-    background-color: rgb(32, 4, 57);
+    /* background-color: rgb(32, 4, 57); */
     align-items: center;
     flex-wrap: wrap;
 }
 
 .logo {
     height: 40px;
-    width: 120px;
+    padding-top: 8px;
+    width: 150px;
     background-image: url(images/aks.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700
+}
+.name{
+    
+font-size: 35px;
 }
 
 nav ul {
@@ -44,6 +59,17 @@ nav ul li a {
     color: white;
     font-size: 16px;
     font-weight: 500;
+}
+.btn{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(0deg,lch(60.87% 81.08 311.71) 0%, rgba(233, 133, 195, 1) 100%);
+    padding: 10px;
+    width: 130px;
+    border: none;
+    margin-top:30px;
+    cursor: pointer;
+    border-radius: 12px;
+    
 }
 
 /* HERO SECTION */
@@ -74,7 +100,7 @@ nav ul li a {
 @media (max-width: 768px) {
 
     body {
-        background-color: #bdc6d8;
+      
     }
 
     nav {
@@ -105,14 +131,12 @@ nav ul li a {
         width: 140px;
         font-size: 14px;
         padding: 10px;
+        border-color: none;
     }
 
     p {
         display: none;
     }
 
-    .logo {
-        width: 100px;
-        height: 35px;
-    }
+    
 }

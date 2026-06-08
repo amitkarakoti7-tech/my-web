@@ -10,8 +10,11 @@
 <style>
     main {
         display: flex;
-        background-color: rgb(127, 225, 255);
+        /* background-colo: rgb(127, 225, 255); */
         padding: 50px;
+    }
+    body{
+        background-color: rgb(127, 225, 255);
     }
     
     .card-box{
@@ -44,24 +47,30 @@ transform: translateY(-10px);
 
 }
 #photogallery{
- background-image: url(images/k.jpg);
+ /* background-image: url(images/k.jpg); */
 }
 #form{
-    background-image: url(images/cp.jpg);
+    /* background-image: url(images/cp.jpg); */
 }
 #photogallery{
-    background-image: url(images/kc.jpg);
+    /* background-image: url(images/kc.jpg); */
 }
 #photogallery{
-    background-image: url(images/kc.jpg);
+    /* background-image: url(images/kc.jpg); */
 }
 #photogallery{
-    background-image: url(images/kc.jpg);
+    /* background-image: url(images/kc.jpg); */
 }
-a button{
-    cursor: pointer;
-    height: 30px;
-    width: 50px;
+ button{
+  
+   color: rgb(0, 0, 0);
+   background: linear-gradient(0deg,lch(60.87% 81.08 311.71) 0%, rgba(233, 133, 195, 1) 100%);
+   border-radius: 10px;
+   height: 40px;
+   width: 80px;
+   margin: 30px;
+   color: white;
+
 }
 </style>
 
@@ -83,11 +92,14 @@ a button{
         </nav>
     </header>
     
-    <main>
-        <a href="kaam.html"><button>back</button>
+    
+        
+           <a class="back" href="kaam.html"><button>back</button>
+           
+<main>
+     
+        
         <div class="card-box">
-            
-            
             <a id="photogallery" href="photogallery.html" class="cards">PHOTOGALLERY</a>
             <a id="form" href="loginform.html" class="cards">loginform</a>
             <a id="registation" href="registation.html" class="cards">Registation</a>

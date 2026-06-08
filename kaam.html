@@ -8,13 +8,13 @@
 </head>
 <style>
 body{
-    background-color: aqua;
+    background: linear-gradient(0deg,lch(60.87% 81.08 311.71) 0%, rgba(233, 133, 195, 1) 100%);
+    height: 820px;
     
 }
 
 main{
      display: flex;
-        
         padding: 30px;
     
 }
@@ -22,13 +22,11 @@ main{
 .card-box{
     
      display: flex;
-        gap: 25px;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
         margin: auto;   
         gap: 150px;
         margin-top: 200px;
+      
        
 
 }
@@ -44,14 +42,13 @@ justify-content: center;
     display: flex;
     align-items: flex-end;
 font-weight: 700;
-    border-radius: 20px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 0.2s all ease;
-    background-color: rgb(147, 130, 165);
+border-radius: 12px;
+    background-color: rgb(89, 71, 108);
     width: 250px;
     height: 300px;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
   
 }
@@ -59,11 +56,12 @@ a button{
     height: 30px;
     width: 60px;
     cursor:pointer;
+    margin: 30px;
 }
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
 body{
-    background-color: antiquewhite;
+    height: 1200px;
     
 
 }
@@ -73,8 +71,12 @@ body{
     margin-top: 40px;
 }
 main{
-    justify-content: center;
-    display: flex;
+   
+    
+}
+.card-box{
+    margin: auto;
+    justify-content: center ;
 }
 
 }
@@ -82,17 +84,17 @@ main{
 
 </style>
 <body>
-    <a href="index.html"><button>back</button>
+    <a href="index.html"><button>back</button></a>
     
     <main>
         
-        <div class="card-box"
+       
 
-        <a id="" href="" class="cool"></a>
+        <div class="card-box">
          <a id="" href="work.html" class="cool">HTML</a>
          <a id="" href="js work.html" class="cool">JAVA</a>
-        
-    </div>
+        </div>
+   
     </main>
     
 </body>

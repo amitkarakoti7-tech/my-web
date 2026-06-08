@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    body {
+        background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(138, 214, 24, 1) 100%, rgba(237, 221, 83, 1) 100%);
+    }
+
+    .pic {
+        width: 10%;
+    }
+
+    #b1 {
+        padding: 15px;
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: 600;
+        background-color: #000000;
+        cursor: pointer;
+        border-radius: 12px;
+        transition: 0.2s all ease;
+    }
+    .container {
+        flex-direction: column;
+        gap: 35px;
+        height: 70vh;
+
+    }
+
+    #b1:hover {
+        transform: translateY(-8px);
+        box-shadow: 0px 5px 10px gray;
+    }
+    .heading{
+        font-family: var(font); 
+    }
+</style>
+
+<body onlaod="shodadd()">
+    
+    <div class="container flex">
+        <h1 class="heading">JavaScript Open() Funtion</h1>
+        <button id="b1">open window</button>
+    </div>
+    <script>
+
+        let b = document.getElementById("b1")
+
+        function show_window() {
+            let w = open("first.html", "mywindow", "left=600,top=300,width=320,height=320")
+
+            // let bb = location.href = "https://www.youtube.com"
+        }
+
+        b1.onclick = show_window;
+
+        let myw = open("", "w", "width=300 height=300")
+        myw.document.write("<h1>Welcome to My window</h1>")
+        myw.document.write("<img class='pic' src='images/ak.jpg'>")
+
+        function showadd() {
+            alert("I am ready to launch")
+        }
+    </script>
+
+</body>
+
+</html>
