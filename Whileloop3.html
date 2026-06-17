@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+        width: 70%;
+        height: 500px;
+        margin: auto;
+        box-shadow: 1px 5px 10px gray;
+        background-color: aqua;
+        border-radius: 12px;
+
+    }
+    header img
+    {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        transition: 0.4s all ease;
+        
+           
+        }
+
+        img:hover{
+            transform: translateY(-8px);
+        }
+    
+    h1
+    {
+        color: rgb(231, 132, 3);
+        text-align: center;
+    }
+</style>
+<h1 id="m">Image of the:</h1>
+<header>
+    <img id="pic" src="">
+    
+</header>
+<body>
+    <script>
+        // Using Swtich Statement
+        //syntax
+        var d = new Date();
+        var m = document.getElementById("m")
+        var pic = document.getElementById("pic")
+        pic.src="images/"
+         var today = d.getDay()
+        // var today = 2
+
+            switch(today)
+            {
+                case 1:
+                    m.innerHTML+=" monday"
+                    pic. src="images/1.jpg"
+
+                    break;
+
+                    case 2:
+                        m.innerHTML+=" tusday"
+                        pic. src="images/2.jpg"
+
+                        break;
+
+                        case 3:
+                            m.innerHTML+=" wednesday"
+                            pic. src="images/3.jpg"
+
+                            break;
+
+                            case 4:
+                                m.innerHTML+=" Tursday"
+                                pic. src="images/4.jpg"
+                                break;
+
+                                case 5:
+                                    m.innerHTML+=" Friday"
+                                    pic. src="images/5.jpg"
+
+                                    break;
+
+                                    case 6:
+                                        m.innerHTML+=" Saturday"
+                                        pic.src="images/6.jpg"
+                                        break;
+
+                                        case 0:
+                                            m.innerHTML+=" Sunday"
+                                            pic. src="images/7.jpg"
+                                            break;
+                                            default:
+
+
+
+
+            }
+            document.title=("my")
+    </script>
+    
+</body>
+</html>
