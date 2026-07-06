@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
 
 * {
     padding: 0;
@@ -16,35 +16,131 @@ a {
     text-decoration: none;
 }
 header{
-    background: linear-gradient(135deg, #0f0c29 0%, #24243e 100%);
+    /* background: linear-gradient(135deg, #0f0c29 0%, #24243e 100%); */
+    backdrop-filter: blur(17px);
+    
+    border: 0.3px solid rgb(255, 255, 255);
+    width: 85%;
+    margin: auto;
+    border-radius: 60px;
+
 }
 
 /* NAVBAR */
 nav {
     display: flex;
-    justify-content: space-between;
-    padding: 12px 70px;
+    /* justify-content: space-between; */
+    gap: 24%;
+    padding: 12px 50px;
     width: 100%;
     /* background-color: rgb(32, 4, 57); */
     align-items: center;
     flex-wrap: wrap;
+    /* margin-top: 29px; */
+    /* position:static; */
+    
+}
+#header {
+        z-index: 999999;
+        width: 100%;
+        /* background-color: aliceblue; */
+        position: fixed;
+        top: 30px;
+    }
+.ba{
+    display: flex;
+    /* gap: 120px; */
+    margin-top: 45px;
+    flex-wrap: wrap;
+     gap: 20%;
+     
+}
+.be{
+    width: 180%; 
+    background-color: #00f2ff; 
+    box-shadow: 0px 0px 180px #04d2dd;
+    cursor: pointer;
+    transition: all 0.1s ease;
+} 
+.be:hover
+{
+    transform: scale(1.1);
+}
+.bd
+{
+    width:160% ;
+    background-color: #000000;
+    color: whitesmoke;
+    border: 0.2px solid ;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.bd:hover
+{
+    border: 1.6px solid #04d2dd;
+    transform: scale(1.1);
+}
+.ba button
+{
+    /* width: 180%;   */
+    
+    height: 50px;
+    border-radius: 14px;
+    
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+.ka
+{
+    color: #30F5FF;
+}
+.bc button
+{
+    background: #00f2ff;
+    width: 99px; 
+    height: 35px;
+    border-radius: 12px;
+    font-weight: 600;
+    border: none;
+    
 }
 
 .logo {
     color: white;
     height: 40px;
     padding-top: 8px;
+    font-size: 18px;
     width: 150px;
     background-image: url(images/aks.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
-    font-weight: 700
+    font-weight: 700;
 }
 .name{
+   font-size: 65px;
+    font-weight: 800; 
+    font-family: sans-serif;
+    background-image: linear-gradient(266deg, 
+        rgba(73, 246, 255, 1) 0%, 
+        rgba(48, 245, 255, 1) 11%, 
+        rgba(69, 246, 255, 1) 61%, 
+        rgba(212, 253, 255, 1) 100%
+    ) !important;
+     -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
     
-font-size: 35px;
+
+}
+
+h2{
+font-size: 65px;
+ font-family: Montserrat;
+
 }
 
 nav ul {
@@ -61,6 +157,10 @@ nav ul li a {
     font-size: 16px;
     font-weight: 500;
 }
+nav ul li a:hover
+{
+    color: #00f2ff;
+}
 .btn{
     color: rgb(255, 255, 255);
     background: linear-gradient(135deg, #0f0c29 0%, #24243e 100%);
@@ -73,29 +173,66 @@ nav ul li a {
     
 }
 
-/* HERO SECTION */
+
 .hero {
-    padding: 25px;
-    margin: 60px auto;
+    padding: 150px 45px;
+    margin: 80px auto; 
     display: flex;
-    gap: 50px;
+    gap: 150px;
     width: 85%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+  
 }
+
+foter{
+   display: block;
+   background-color: #091929;
+   margin-top: 10%;
+   
+
+   
+}
+body{
+    background-color: #050505;
+    color: white;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+  
+    color: aliceblue;
+    padding: 15px;
+   
+    
+}
+.bottom
+{
+    text-align: center;
+    background-color: #24243e;
+    color: aliceblue;
+}
+
 
 .profile-pic {
-    background-image: url(images/aks.jpeg);
-    border-radius: 50%;
+    background-image: url(images/me.png);
+    /* border-radius: 20%; */
     background-size: cover;
     height: 300px;
-    width: 300px;
+    width: 350px;
+     object-fit:contain;
+     /* box-shadow: 0px 5px 150px #04282a;  */
+    transition: all 0.5s ease;
 }
 
-.pic {
-    text-align: center;
-}
+
+
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
@@ -123,6 +260,14 @@ nav ul li a {
         text-align: center;
     }
 
+    .pi{
+        
+        order: 1;
+    }
+    .bio{
+        order: 2;
+    }
+    
     .profile-pic {
         width: 200px;
         height: 200px;
@@ -130,14 +275,14 @@ nav ul li a {
 
     .btn {
         width: 140px;
-        font-size: 14px;
+        
         padding: 10px;
         border-color: none;
     }
 
-    p {
+    /* p {
         display: none;
-    }
+    } */
 
     
 }

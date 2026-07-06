@@ -5,57 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <div class="header">JavaScript Wrok</div>
-</header>
 <style>
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-
-    * {
-        font-family: montserrat;
-        text-decoration: none;
-        padding: 0%;
-        margin: 0%;
-        list-style: none;
-
-    }
-
-    .header {
-        color: white;
-        font-family: montserrat;
-        font-weight: 600;
-        background: linear-gradient(135deg, #0f0c29 0%, #24243e 100%);
-        text-align: center;
-        font-size: 35px;
-        padding: 20px;
-    }
-
     main {
         display: flex;
-
+        /* background-colo: rgb(127, 225, 255); */
         padding: 50px;
-        height: 800px;
     }
 
-    body {
-        background-color: #f8f9fa;
-    }
 
     .card-box {
         display: flex;
-        gap: 90px;
+        gap: 40px;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         margin: auto;
-        display: flex;
+        margin-top: 10%;
     }
 
 
@@ -64,76 +31,285 @@
 
 
 
-    .cards {
-        padding-bottom: 10px;
-        font-size: 35px;
-        /* color: rgb(130, 35, 35); */
-        justify-content: center;
-        display: flex;
-        align-items: flex-end;
-        font-weight: 700;
+
+
+
+
+    .ba {
+        margin-top: 20px;
+    }
+
+    .card1 {
         border-radius: 20px;
+        transition: 0.3s ease all;
+        width: 300px;
+        /* height: 335px; */
+        /* height: 300px; */
+        background-color: #121212;
+
+    }
+
+
+    .card1 img {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 180px;
+
+    }
+
+    .btt {
+        background: #00f2ff;
+        width: 99px;
+        height: 35px;
+        border-radius: 8px;
+        font-weight: 600;
+        border: 1px solid black;
+        margin-top: 8px;
+        cursor: pointer;
+    }
+
+    .bgimg {
+        background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
-        height: 250px;
-        width: 300px;
-        transition: 0.2s all ease;
-        background: linear-gradient(135deg, #0f0c29 0%, #24243e 100%);
-        color: white;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 160px;
 
     }
 
-    .cards:hover {
+
+    #header {
+        width: 100%;
+        /* background-color: aliceblue; */
+        position: fixed;
+        top: 30px;
+    }
+
+    .content {
+        color: black;
+        text-align: center;
+        padding: 8px 8px;
+    }
+
+    .content h3 {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        color: #f4f4f4;
+    }
+
+    .content p {
+        font-size: 15px;
+        font-weight: 449;
+        color: #f4f4f4;
+    }
+
+    .card1:hover {
         transform: translateY(-10px);
-        box-shadow: 0px 8px 10px gray;
-
+        box-shadow: 0px 0px 8px #00f2ff;
+        /* border: 2px solid #00f2ff; */
     }
 
-    a button {
-        background-color: rgb(231, 231, 231);
-        width: 10%;
-        height: 25px;
-        margin: 20px;
-        cursor: pointer;
+    @media (max-width: 768px) {
+        .ba {
+            justify-content: center;
+
+        }
+
+        #j {
+            text-align: start;
+        }
+
     }
 </style>
 
 <body>
+    <div id="header">
+        <header>
+            <nav>
+                <div class="logo"> AMIT <span class="ka">KARAKOTI</span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="kaam.html">Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
 
-    <a href="kaam.html"><button>back</button></a>
+                </ul>
+                <div class="bc"><button>Cell Me</button></div>
+            </nav>
+        </header>
+    </div>
 
-        <main>
+
+
+
+    <main>
+
+        <div>
             <div class="card-box">
+                <div class="card1">
+                    <div class="bgimg" style="background-image: url(images/lode.jpg);"></div>
+                    <div class="content">
+                        <h3>CREATED TAG IN JS</h3>
+                        <p>CreateElement is a JS method to create a HTML element dynamically.</p>
+                        <a href="createlement.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="bgimg" style="background-image: url(images/loding.jpg);"></div>
+                    <div class="content">
+                        <h3>CREATE DIOLOGUE BOX</h3>
+                        <p>A dialogue box div is a popup box created using the HTML div element.</p>
+                        <a href="creatediv.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                      <div class="bgimg" style="background-image: url(images/calculeter.jpg);"></div>
+                    <div class="content">
+                        <h3>CALCULATOR</h3>
+                        <p>It takes from the user,process the calculation, and result on the screen.</p>
+                        <a href="using_input_element.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
 
-                <a id="photogallery" href="ja.html" class="cards">JavaScript</a>
-                <a id="form" href="createlement.html" class="cards">JavaScript</a>
-                <a id="form" href="creatediv.html" class="cards">Div</a>
-                <a id="form" href="using_input_element.html" class="cards">Input Element</a>
-                <a id="form" href="usinglib.html" class="cards">maltiplay</a>
-                <a id="form" href="color chang.html" class="cards">Color Chang</a>
-                <a id="form" href="Date.html" class="cards">Date</a>
-                <a id="form" href="slider_and_color.html" class="cards">Slider</a>
-                <a id="form" href="redirection.html" class="cards">Open window</a>
-                <a id="form" href="Loop1.html" class="cards">table</a>
-                <a id="form" href="color change div.html" class="cards">color change</a>
-                <a id="form" href="Whieloop.html" class="cards">Whieloop 1</a>
-                <a id="form" href="Whieloop2.html" class="cards">Whieloop 2</a>
-                <a id="form" href="Array(2).html" class="cards">Array</a>
-                <a id="form" href="createpopup.html" class="cards">popup ad</a>
-                <a id="form" href="password.html" class="cards">password</a>
-                <a id="form" href="banner3.html" class="cards">Frosting Banner</a>
-                <a id="form" href="Whileloop3.html" class="cards">Change Days</a>
-                <a id="form" href="changemode.html" class="cards">Change Mode</a>
-                <a id="form" href="banner width radio button.html" class="cards">radio button</a>
-                <a id="form" href="menu4.html" class="cards">show button</a>
+                <div class="card1">
+                      <div class="bgimg" style="background-image: url(images/background\ color.jpg);"></div>
+                    <div class="content">
+                        <h3>BACKGROUND COLOR</h3>
+                        <p>BG color in JavaScript is used to change the color of an HTML.</p>
+                        <a href="color chang.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                      <div class="bgimg" style="background-image: url(images/date\ time.jpg);"></div>
+                    <div class="content">
+                        <h3>DATE & TIME</h3>
+                        <p>In JavaScript,Date and Time are using the built-in Date object.</p>
+                        <a href="Date.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+               
+                <div class="card1">
+                          <div class="bgimg" style="background-image: url(images/color.jpg);"></div>
+                    <div class="content">
+                        <h3>COLOR</h3>
+                        <p>A Color Controller Slider is a feature where sliders are used to control.</p>
+                        <a href="color change div.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                     <div class="bgimg" style="background-image: url(images/table.jpg);"></div>
 
-
-
-
+                    <div class="content">
+                        <h3>INPUT BOX TABLE</h3>
+                        <p>Table creation in JS means creating an HTML table dynamically using JS.</p>
+                        <a href="Whieloop.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                          <div class="bgimg" style="background-image: url(images/color\ palet.jpg);"></div>
+                    <div class="content">
+                        <h3>COLOR PALATTE</h3>
+                        <p>A Color Palette is a collection of colors that users can choose from.</p>
+                        <a href="Whieloop2.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                     <div class="bgimg" style="background-image: url(images/image\ salider.jpg);"></div>
+                    <div class="content">
+                        <h3>IMAGE SLIDDER</h3>
+                        <p>An Image Slider is a web component that displays in the same area.</p>
+                        <a href="slider_and_color.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+   
+                <div class="card1">
+                     <div class="bgimg" style="background-image: url(images/image\ stor.jpg);"></div>
+                    <div class="content">
+                        <h3>ARRAY (Variable)</h3>
+                        <p>An Array in JS is a object used to store multiple values in a single var.</p>
+                        <a href="Array(2).html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                     <div class="bgimg" style="background-image: url(images/window\ open.jpg);"></div>
+                    <div class="content">
+                        <h3>POP-UP EFFECT</h3>
+                        <p>A popup effect for messages on the screen when a user clicks a button.</p>
+                        <a href="redirection.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                     <div class="bgimg" style="background-image: url(images/dark\ mode.jpg);"></div>
+                    <div class="content">
+                        <h3>LIGHT TO DARK THEME</h3>
+                        <p>A Theme is feature that allows users to switch a website appearance.</p>
+                        <a href="changemode.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                     <div class="bgimg" style="background-image: url(images/week\ day.jpg);"></div>
+                    <div class="content">
+                        <h3>WEEKDAYS(SWITCH)</h3>
+                        <p>In JS,weekdays can change according to the current day.</p>
+                        <a href="Whileloop3.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                     <div class="bgimg" style="background-image: url(images/do\ while\ loop.jpg);"></div>
+                    <div class="content">
+                        <h3>DO WHILE LOOP</h3>
+                        <p>A do while loop is a block of code to run at least one time.</p>
+                        <a href="password.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                     <div class="bgimg" style="background-image: url(images/banner\ js.jpg);"></div>
+                    <div class="content">
+                        <h3>FROASTING BANNER</h3>
+                        <p>A Frosting Banner that appears with a transparent or glass-like effect.</p>
+                        <a href="banner3.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                     <div class="bgimg" style="background-image: url(images/banner\ width.jpg);"></div>
+                    <div class="content">
+                        <h3>RADIO BUTTON BANNER</h3>
+                        <p>A Radio Button Banner that uses buttons to switch different images.</p>
+                        <a href="banner width radio button.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                     <div class="bgimg" style="background-image: url(images/drop\ done.jpg);"></div>
+                    <div class="content">
+                        <h3>DROP DOWN MENU</h3>
+                        <p>A drop-down menu is a menu that shows a list of options.</p>
+                        <a href="menu4.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                     <div class="bgimg" style="background-image: url(images/pop\ out.jpg);"></div>
+                    <div class="content">
+                        <h3>POP-UP EFFECT(BY DIV)</h3>
+                        <p>A popup create using div is a hidden element that appears on the screen.</p>
+                        <a href="createpopup.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                     <div class="bgimg" style="background-image: url(images/sum.jpg);"></div>
+                    <div class="content">
+                        <h3>sum</h3>
+                        <p>A popup create using div is a hidden element that appears on the screen.</p>
+                        <a href="usinglib.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
 
             </div>
-        </main>
+        </div>
+    </main>
 
 </body>
 

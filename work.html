@@ -13,140 +13,261 @@
         /* background-colo: rgb(127, 225, 255); */
         padding: 50px;
     }
-    body{
-        background-color: #f8f9fa;
-    }
-    
-    .card-box{
+
+
+    .card-box {
         display: flex;
-        gap: 25px;
+        gap: 40px;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin: auto;   
-     }
-.cards{
-    padding-bottom: 10px;
-    font-size: 30px;
-    color: rgb(130, 77, 77);
-justify-content: center;
-    display: flex;
-    align-items: flex-end;
-font-weight: 700;
-    border-radius: 20px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 250px;
-    width: 300px;
-    transition: 0.2s all ease;
-    background: #ffffff;
-}
-.cards:hover{
-transform: translateY(-10px);
+        margin: auto;
+        margin-top: 10%;
+    }
 
-}
-#photogallery{
- /* background-image: url(images/k.jpg); */
-}
-#form{
-    /* background-image: url(images/cp.jpg); */
-}
-#photogallery{
-    /* background-image: url(images/kc.jpg); */
-}
-#photogallery{
-    /* background-image: url(images/kc.jpg); */
-}
-#photogallery{
-    /* background-image: url(images/kc.jpg); */
-}
- button{
-  
-   color: rgb(0, 0, 0);
-   background: linear-gradient(0deg,lch(60.87% 81.08 311.71) 0%, rgba(233, 133, 195, 1) 100%);
-   border-radius: 10px;
-   height: 40px;
-   width: 80px;
-  
-   color: white;
 
-}
-span#j
-{
-    text-align: center;
-    padding-left: 38%;
-    width: 100%;
-    font-size: 30px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    letter-spacing: 2px;
 
-    
-    
-    
-    
-}
-.ba{
-    margin-top: 20px;   
-}
-@media (max-width: 768px){
-        .ba{
+
+
+
+
+
+
+
+
+    .ba {
+        margin-top: 20px;
+    }
+
+    .card1 {
+        border-radius: 20px;
+        transition: 0.3s ease all;
+        width: 280px;
+        /* height: 335px; */
+        /* height: 300px; */
+        background-color: #121212;
+
+    }
+
+
+    .card1 img {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 180px;
+
+    }
+
+    .bgimg {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 160px;
+
+    }
+
+    .btt {
+        background: #00f2ff;
+        width: 99px;
+        height: 35px;
+        border-radius: 8px;
+        font-weight: 600;
+        border: 1px solid black;
+        margin-top: 8px;
+        cursor: pointer;
+    }
+
+    #header {
+        width: 100%;
+        /* background-color: aliceblue; */
+        position: fixed;
+        top: 30px;
+    }
+
+    .content {
+        color: black;
+        text-align: center;
+        padding: 8px 8px;
+    }
+
+    .content h3 {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        color: #f4f4f4;
+    }
+
+    .content p {
+        font-size: 15px;
+        font-weight: 449;
+        color: #f4f4f4;
+    }
+
+    .card1:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 0px 8px #09f3ff;
+        /* border: 2px solid #00f2ff; */
+    }
+
+    @media (max-width: 768px) {
+        .ba {
             justify-content: center;
-           
+
         }
-        #j{
+
+        #j {
             text-align: start;
         }
-    
-}
+
+    }
 </style>
 
 <body>
-    <header>
-        
-        <nav>
-            
-            <div class="logo">
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skill.html">Skills</a></li>
-                <li><a href="work.html">Works</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <div id="header">
+        <header>
+            <nav>
+                <div class="logo"> AMIT <span class="ka">KARAKOTI</span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="kaam.html">Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
 
-            </ul>
-        </nav>
-    </header>
-    
-    
-        
-           <!-- <a class="back" href="kaam.html"><button>back</button>
-            <div id="j">HTML CSS<button></button></div> -->
-            <div class="ba">
-               <a class="back" href="kaam.html"><button>back</button></a><span id="j">HTML CSS</span>
+                </ul>
+                <div class="bc"><button>Cell Me</button></div>
+            </nav>
+        </header>
+    </div>
+
+
+
+
+    <main>
+
+        <div>
+            <div class="card-box">
+               
+                <div class="card1">
+                    <!-- <img src="images/galeri.jpg" alt=""> -->
+                     <div class="bgimg" style="background-image: url(images/galeri.jpg);"></div>
+                    <div class="content">
+                        <h3>PHOTO GALLERY</h3>
+                        <p>A profile page displays personal or professional details.</p>
+                        <a href="photogallery.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="images/ragistation.jpg" alt="">
+                    <div class="content">
+                        <h3>REGESTRATION FORM</h3>
+                        <p>A registration form allows users to sign up by filling in details.</p>
+                        <a href="registation.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                <div class="bgimg" style="background-image: url(images/login\ form.jpg);"></div>
+                    <div class="content">
+                        <h3>LOGIN FORM</h3>
+                        <p>A login form collects user information to verify identity.</p>
+                        <a href="loginform.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+
+                <div class="card1">
+                    <img src="images/table.jpg" alt="">
+                    <div class="content">
+                        <h3>TABLE</h3>
+                        <p>A Table in HTML is used to display data in rows and columns.</p>
+                        <a href="table.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                    <!-- <img src="images/responsiv.jpg" alt=""> -->
+                     <div class="bgimg" style="background-image: url(images/responsiv.jpg);"></div>
+                    <div class="content">
+                        <h3>RESPONSIVE BANNER</h3>
+                        <p>A responsive banner is usually placed at the top of a webpage</p>
+                        <a href="responsiveprofile.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                    <!-- <img src="images/list.jpg" alt=""> -->
+                     <div class="bgimg" style="background-image: url(images/list.jpg);"></div>
+                    <div class="content">
+                        <h3>LIST</h3>
+                        <p>A List in HTML is used to display items in an organized way.</p>
+                        <a href="list.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                    <!-- <img src="images/news.jpg" alt=""> -->
+                     <div class="bgimg" style="background-image: url(images/news.jpg);"></div>
+                    <div class="content">
+                        <h3>NEWS</h3>
+                        <p>News is the report of current events shared through different media.</p>
+                        <a href="book.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="images/4.jpg" alt="">
+                    <div class="content">
+                        <h3>MENU</h3>
+                        <p>Menu is a menu that slides from the side of the screen.</p>
+                        <a href="menu2.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                    <!-- <img src="images/side menu.jpg" alt=""> -->
+                     <div class="bgimg" style="background-image: url(images/side\ menu.jpg);"></div>
+                    <div class="content">
+                        <h3>FLYING OUT MENU</h3>
+                        <p>A Flying Out Menu is a menu that slides from the side of the screen.</p>
+                        <a href="menufly.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                    <!-- <img src="images/div block.jpg" alt=""> -->
+                     <div class="bgimg" style="background-image: url(images/div\ block.jpg);"></div>
+                    <div class="content">
+                        <h3>DIV-BLOCK</h3>
+                        <p>a div is a container(block element)to group other element.</p>
+                        <a href="div.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                    <!-- <img src="images/video.jpg" alt=""> -->
+                     <div class="bgimg" style="background-image: url(images/video.jpg);"></div>
+                    <div class="content">
+                        <h3>AUDIO & VIDEO</h3>
+                        <p>Audio and Video tags are used to add sound and video to a webpage.</p>
+                        <a href="media.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="images/4.jpg" alt="">
+                    <div class="content">
+                        <h3>TRANSFORM 3D HTML</h3>
+                        <p>3D is used to move, rotate elements in a three-dimensional space.</p>
+                        <a href="transform.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="bgimg" style="background-image: url(images/responsiv.jpg);"></div>
+                    
+                    <div class="content">
+                        <h3>TRANSFORM 3D HTML</h3>
+                        <p>3D is used to move, rotate elements in a three-dimensional space.</p>
+                        <a href="transform.html"><button class="btt">View</button></a>
+                    </div>
+                </div>
+
             </div>
-           
-<main>
-     
-        
-        <div class="card-box">
-            <a id="photogallery" href="photogallery.html" class="cards">PHOTOGALLERY</a>
-            <a id="form" href="loginform.html" class="cards">loginform</a>
-            <a id="registation" href="registation.html" class="cards">Registation</a>
-            <a id="table" href="table.html" class="cards">Table</a>
-            <a id="responsiveprofile" href="responsiveprofile.html" class="cards">Responsiveprofile</a>
-            <a id="List" href="list.html" class="cards">List</a>
-            <a id="List" href="book.html" class="cards">link </a>
-            <a id="Manu" href="menu2.html" class="cards">Manu</a>
-            <a id="manu2" href="menufly.html" class="cards">Manuflay</a>
-            <a id="div" href="div.html" class="cards">Div</a>
-            <a id="media" href="media.html" class="cards">Media</a>
-             <a id="media" href="transform.html" class="cards">2 photo</a>
-            
         </div>
     </main>
-        
+
 </body>
 
 <foter>
@@ -154,4 +275,3 @@ span#j
 </foter>
 
 </html>
-

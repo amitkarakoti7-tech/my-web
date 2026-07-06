@@ -1,108 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <style>
-body{
-  
-    height: 820px;
-    
-}
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-main{
-     display: flex;
-        padding: 30px;
-    
-}
-
-.card-box{
-    
-     display: flex;
+    * {
+        padding: 0%;
+        margin: 0%;
         flex-wrap: wrap;
-        margin: auto;   
-        gap: 150px;
-        margin-top: 100px;
-        
-}
+    }
+
+    main {
+        display: flex;
+
+    }
+
+    .card-box {
+        font-family: poppins;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 40px; 
+        gap: 90px
+    }
+
+    .contfull {
+        width: 300px;
+        height: 360px;
+        background-color: #121111;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.3s all ease;
+    }
+
+    .contfull:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 0px 5px #00f2ff;
+    }
+
+    .btt {
+        background-color: #00f2ff;
+        color: black;
+        padding: 0%;
+        margin-top: 14px;
+        width: 38%;
+        font-family: poppins;
+    }
+
+    .conthaf {
+        padding: 0px 10px 10px 10px;
+        text-align: center;
+
+    }
+
+    .contfull img {
+        width: 50%;
+        /* height: 100px; */
+        margin: auto;
+        margin-left: 70px;
+        margin-top: 10px;
+
+    }
+
+    .conthaf h3 {
+        color: #00f2ff;
+    }
+
+    .conthaf p {
+        color: rgb(255, 255, 255);
+    }
 
 
-.card-box a{
-    text-decoration: none;
-}
 
-.cool{
- padding-bottom: 20px;
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-justify-content: center;
-    display: flex;
-    align-items: flex-end;
-font-weight: 700;
-border-radius: 12px;
-     background: linear-gradient(135deg, #0f0c29 0%, #24243e 100%);
-    width: 250px;
-    height: 300px;
-    font-size: 30px;
-    font-weight: 800;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: all 0.3s ease;
-  
-}
-.cool:hover{
-    transform: translateY(-10px);
-        box-shadow: 0px 8px 10px gray;
-}
-a button{
-    height: 30px;
-    width: 60px;
-    cursor:pointer;
-    margin: 30px;
-}
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
-body{
-    height: 1200px;
-    
+    .card-box a {
+        text-decoration: none;
+    }
 
-}
-.cool{
-    justify-content: center;
-    margin-right: 100px;
-    margin-top: 40px;
-}
-main{
-   
-    
-}
-.card-box{
-    margin: auto;
-    justify-content: center ;
-}
 
-}
-   
 
+
+    a button {
+        height: 35px;
+        width: 70px;
+        cursor: pointer;
+        margin: 30px;
+        border-radius: 8px;
+        color: rgb(0, 0, 0);
+        background: #00f2ff;
+        border: none;
+    }
+
+    .headerup {
+        font-family: poppins;
+        text-align: center;
+        margin-top: 120px;
+        /* display: flex; */
+    }
+
+    .headerup h4 {
+        color: #00f2ff;
+    }
+    .bb{
+        margin-right: 90%;
+        /* margin: 0%; */
+        padding: 0%;
+
+    }
+
+
+
+    /* ================= MOBILE ================= */
+    @media (max-width: 768px) {
+        body {
+            height: 1200px;
+
+
+        }
+
+        .cool {
+            justify-content: center;
+            margin-right: 100px;
+            margin-top: 40px;
+        }
+
+
+
+
+        .card-box {
+            margin: auto;
+            justify-content: center;
+        }
+
+        #htmlpic {
+            background-image: url(images/htmlhoto.jpg);
+        }
+
+    }
 </style>
+<div id="header">
+    <header>
+        <nav>
+            <div class="logo"> AMIT <span class="ka">KARAKOTI</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="kaam.html">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+            <div class="bc"><button>Cell Me</button></div>
+        </nav>
+    </header>
+</div>
+
 <body>
-    <a href="index.html"><button>back</button></a>
+    
+    <div class="headerup">
+        
+       <a href="index.html"><button class="bb">⬅back</button></a> <h4>This is My Work</h4>
+        
+        <h2>What I Do</h2>
+        <p>I build modern,and interactive wab experiences <br>usinge the technologies i love</p>
+    </div>
     
     <main>
-        
-       
 
         <div class="card-box">
-         <a id="" href="work.html" class="cool">HTML</a>
-         <a id="" href="js work.html" class="cool">JAVA</a>
+            <div class="contfull">
+                <img src="images/html[hoto.jpg" alt="">
+                <div class="conthaf">
+                    <h3>HTML Work</h3>
+                    <p>HTML (Hypertext Markup Language) is a simplemarkup coding language used to layout content on a
+                        webpage</p>
+                    <a href="work.html"><button class="btt">View Work</button></a>
+
+                </div>
+
+            </div>
+            <div class="contfull">
+                <img src="images/javascriptpic.jpg" alt="">
+                <div class="conthaf">
+                    <h3>javascript</h3>
+                    <p>JavaScript is broadly categorized as a scripting language, or an interpreted language.</p>
+                    <a href="js work.html"><button class="btt">View Work</button></a>
+
+                </div>
+
+            </div>
+
+
         </div>
-   
+
+
     </main>
-    
+
 </body>
 <footer>
 
 </footer>
+
+
 </html>
