@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<header>
+    Toggle
+</header>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+
+<style>
+
+    header{
+        text-align: center;
+        font-size: 45px;
+        font-weight: 600;
+        letter-spacing: 10px;
+    }
+    li {
+        cursor: pointer;
+        font-size: 20px;
+        list-style: none;
+    }
+
+    ol{
+        margin-left: 10px;
+    }
+
+    body {
+        background-color: black;
+        color: aliceblue;
+    }
+    #Social ,#ghar ,#bahar{
+        font-size: 35px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: aliceblue;
+        list-style: on;
+
+    }
+</style>
+
+<body>
+
+
+    <ol>
+        <li id="Social">Home
+            <ol>
+                <li>suraj</li>
+                <li>mukesh</li>
+                <li>buhun</li>
+                <li>aman</li>
+            </ol>
+        </li>
+        <li id="ghar">school
+            <ol>
+                <li>gorav</li>
+                <li>ankit</li>
+                <li>shyam</li>
+                <li>sanju</li>
+            </ol>
+        </li>
+        <li id="bahar">school
+            <ol>
+                <li>harshit</li>
+                <li>kapil</li>
+                <li>niki</li>
+                <li>gori</li>
+            </ol>
+        </li>
+
+    </ol>
+
+    <script>
+        $(document).ready(function () {
+            $("#Social").click(function () {
+                $("#Social>ol").toggle(500)
+            })
+
+            $("#ghar").click(function () { 
+                $("#ghar>ol").toggle(500)
+            }
+            )
+
+            $("#bahar").click(function()
+        {
+            $("#bahar>ol").toggle(500)
+        })
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>

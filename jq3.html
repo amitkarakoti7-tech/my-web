@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<header>
+    Slidup
+</header>
+<style>
+    header{
+        font-size: 40px;
+        color: aliceblue;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 30px;
+        text-align: center;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    #about {
+        background-color: aliceblue;
+        box-shadow: 0px 10px 10px gray;
+        width: 90%;
+        margin: auto;
+        margin: 90px;
+        
+    }
+    html{
+        background-color: black;
+    }
+    p{
+        padding: 15px;
+    }
+
+    #col1 ,#col2 ,#col3{
+        cursor: pointer;
+        background-color: pink;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0px 6px 10px rgb(224, 153, 236);
+    }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+
+<body>
+    <div id="about">
+        <h1 id="col1">wellcome</h1>
+        <div id="aboutsub">
+            
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!m dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!</p>
+        </div>
+
+
+ <div id="bout">
+        <h1 id="col2">wellcome</h1>
+        <div id="boutsub">
+            
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!m dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!</p>
+        </div>
+
+         <div id="out">
+        <h1 id="col3">wellcome</h1>
+        <div id="outsub">
+            
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!m dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maxime aliquam dolorem quia neque
+            tenetur. Laborum, voluptate optio! Dolor, modi!</p>
+        </div>
+   
+
+    <script>
+
+        $("#aboutsub").hide()
+        $("#boutsub").hide()
+        $("#outsub").hide()
+
+
+
+        $(document).ready(function()
+    {
+
+        $("#aboutsub").slideUp(500)
+        $("#boutsub").slideUp(500)
+        $("#outsub").slideUp(500)
+    })
+        
+
+      
+        $("#col1").click(function()
+    {
+        $("#boutsub").slideUp(500)
+        $("#outsub").slideUp(500)
+
+        $("#aboutsub").slideToggle(500)
+        // $("#aboutsub").css({"backgroud":"yellow","color":"pink","woidth":"80%"})
+
+    })
+
+    $("#col2").click(function()
+{
+    $("#aboutsub").slideUp(500)
+    $("#outsub").slideUp(500)
+
+
+
+    $("#boutsub").slideToggle(500)
+    // $("#boutsub").css({"background":"brown","color":"teal","width":"80%"})
+})
+
+$("#col3").click(function()
+{
+    $("#aboutsub").slideUp(500)
+    $("#boutsub").slideUp(500)
+
+    $("#outsub").slideToggle(500)
+})
+
+
+    </script>
+
+
+</body>
+
+</html>

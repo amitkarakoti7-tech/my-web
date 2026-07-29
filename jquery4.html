@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width" , initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.1rem;
+            text-align: center;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            border-radius: 25px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.261);
+            padding: 30px;
+
+        }
+
+        .img {
+            border-radius: 25px;
+            width: 65%;
+
+
+        }
+
+        header{
+            text-align: center;
+            font-size: 45px;
+            font-weight: 600;
+            margin: 20px;
+        }
+    </style>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+
+<header>
+   Jquery Classes :-- addclass removeclass toggleclass
+</header>
+
+<body>
+
+
+               
+
+    <div class="box">
+        <h1>I am First heading</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, consectetur quisquam libero ex, sapiente
+            illum expedita fugit quaerat tempora est qui tempore quidem labore harum accusamus. Itaque delectus repellat
+            sit consectetur a aspernatur, distinctio, alias quasi commodi ipsam iste enim ea. Quos reprehenderit ex
+            asperiores architecto sequi reiciendis exercitationem voluptatem. Sint quaerat odit tempora ducimus
+            voluptatibus?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, perspiciatis necessitatibus magni cum
+            nisi ex culpa sed quae, ab in ipsa. Aut omnis harum corrupti aliquam magnam, quis pariatur sint rerum, dicta
+            optio consequatur nesciunt expedita eius. Libero neque ullam ad natus vero corporis magni repudiandae eius
+            esse provident fugit perspiciatis commodi vitae necessitatibus laborum aut error et a perferendis, in
+            laboriosam explicabo. Iste illum, non aliquam enim rerum, quibusdam vel optio laudantium veritatis cumque
+            fugiat rem!
+        </p>
+        <img class="img"
+            src="https://images.wallpapersden.com/image/download/thanos-smiling_a2ZrbWWUmZqaraWkpJRmbmdlrWZlbWU.jpg"
+            alt="">
+    </div>
+    <h1>I am second heading</h1>
+    <div class="box">
+        
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, consectetur quisquam libero ex, sapiente
+            illum expedita fugit quaerat tempora est qui tempore quidem labore harum accusamus. Itaque delectus repellat
+            sit consectetur a aspernatur, distinctio, alias quasi commodi ipsam iste enim ea. Quos reprehenderit ex
+            asperiores architecto sequi reiciendis exercitationem voluptatem. Sint quaerat odit tempora ducimus
+            voluptatibus?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, numquam quas. Natus sapiente eos
+            molestiae nesciunt minus ipsa consectetur provident delectus deleniti, quaerat enim voluptas quisquam
+            temporibus quibusdam minima quidem consequatur reiciendis laudantium. Velit pariatur facilis animi,
+            asperiores corrupti impedit suscipit ipsum similique facere incidunt.
+        </p>
+        <img class="img"
+            src="https://www.looper.com/img/gallery/marvel-announces-the-return-of-thanos-in-a-brand-new-series/l-intro-1692020420.jpg"
+            alt="">
+    </div>
+</body>
+<footer>
+    <h2>
+        All Right Reserved &copy;
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorum consequatur repellendus quaerat nobis
+        voluptatum consequuntur cupiditate mollitia quos esse quisquam, ipsa magnam illum commodi aspernatur harum
+        expedita pariatur officia!
+        Quia deserunt maiores obcaecati ullam molestias quam sed omnis doloremque molestiae tempore rem officia cum unde
+        explicabo nam velit, aperiam, ipsum quae exercitationem officiis, pariatur corrupti! Temporibus quaerat aliquid
+        laborum!
+        Natus error adipisci minima in maxime ipsam molestias laboriosam impedit temporibus aperiam minus consequatur
+        esse odit, dolore earum reiciendis. Rerum illum, et aliquid consequatur consectetur qui quo amet quisquam
+        deleniti!
+        Quia reiciendis veniam dolorem deleniti quidem! Voluptate accusantium soluta placeat, ducimus error explicabo
+        dignissimos quas enim iusto sit ipsam numquam itaque! Est, autem dolorum! Atque placeat numquam exercitationem
+        deleniti laudantium!
+        Officia, tenetur porro obcaecati minima quasi natus? Officia maxime voluptatibus at? Minus laudantium, fuga
+        error non cumque a harum, aliquam assumenda ducimus quaerat adipisci dicta fugiat voluptas iusto vitae
+        blanditiis?
+    </p>
+</footer>
+
+
+<script>
+    $(document).ready(function () 
+    {
+        $("p").mouseover(function () 
+        {
+            $(this).addClass("sel animate__animate animate__bounce")
+        })
+
+
+        $("p").mouseout(function () 
+        {
+            $(this).css({ "transition": "2s" })
+            $(this).removeClass("sel animate__bounce ")
+        })
+
+        $("h2").mouseover(function () {
+            $(this).addClass("animate__animated animate__bounce")
+
+        })
+
+        $("h2").mouseout(function()
+    {
+        $(this).removeClass("animate__rotateInDownRight")
+    })
+
+        $("img").mouseover(function()
+    {
+        $(this).css({"width":"40%"})
+        $(this).toggleClass("pic animate__animated  animate__flip")
+    })
+    })
+</script>
+
+</html>

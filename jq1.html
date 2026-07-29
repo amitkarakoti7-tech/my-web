@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+
+
+<style>
+    body {
+        background-color: black;
+
+    }
+
+    * {
+        cursor: pointer;
+
+        margin: 10px;
+    }
+
+
+    h1 {
+        color: cyan;
+
+    }
+
+    #my {
+        color: white;
+
+    }
+
+    header {
+        text-align: center;
+
+    }
+
+    .pic {
+        width: 20%;
+    }
+
+    .text {
+        color: rgb(248, 242, 242);
+        padding: 20px;
+        text-align: justify;
+    }
+
+    #b1{
+        font-size: 25px;
+        width: 15%;
+        height: 35px;
+        border-radius: 9px;
+
+    }
+</style>
+
+<body>
+    <img src="images/3.jpg" class="pic">
+    <button id="b1">(hide) </button>
+    <h1 id="my">About Jquery</h1>
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, expedita deserunt, ipsam molestiae possimus
+        eius est neque non, delectus facere accusantium ea veritatis esse enim excepturi? Iusto itaque aliquam sequi?
+        Non hic excepturi pariatur illo neque qui eveniet labore odio minima possimus laborum magnam maxime quibusdam
+        iure unde porro reprehenderit tempore rem nobis, veniam dolor ipsam ratione corrupti! Suscipit, repudiandae.
+        Nisi necessitatibus minima molestias, blanditiis alias optio id ullam iure, assumenda aspernatur in! Iusto
+        excepturi ducimus perferendis, autem reprehenderit ipsam, inventore assumenda at cupiditate repellat voluptate
+        aliquid. A, recusandae accusantium?
+        Accusantium officia exercitationem pariatur eaque magnam. Totam quae quisquam quos repellat cupiditate quibusdam
+        eius est quaerat delectus similique. Quo quas ex tenetur eveniet harum cum doloremque odio earum quos neque?
+        Placeat, ad! Officiis explicabo vel, odio pariatur, sint rem iusto quasi et commodi expedita veniam laborum
+        saepe facilis, amet obcaecati voluptatem molestiae mollitia minus consequatur ratione accusantium corrupti? Qui,
+        esse?
+        Nulla expedita voluptates excepturi vero, veritatis beatae dolores cupiditate similique aut a sed, nostrum natus
+        asperiores voluptatum quisquam exercitationem vitae nihil repellat ratione velit? Animi facilis praesentium
+        maxime et illum!
+        Exercitationem consequatur placeat optio cum fugit autem voluptate repudiandae animi rerum dolorum beatae
+        distinctio, dicta nulla quod. At harum, perferendis labore facere fuga voluptatum reiciendis quibusdam facilis
+        atque qui sapiente!
+        Labore id voluptate doloremque odio hic enim veritatis, quibusdam laboriosam, sapiente, deleniti ipsa temporibus
+        nam assumenda pariatur. Sint molestiae maxime, neque voluptate earum vero quam eius beatae velit, a aperiam.
+        Reprehenderit cum alias aliquid aperiam facere laborum quas animi. Debitis doloremque in doloribus! Deleniti,
+        assumenda! Quos odit fugiat quidem tenetur numquam molestias natus similique non voluptatibus, ipsa ullam
+        quisquam. Atque.
+     
+        molestiae?
+    <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil enim incidunt dolor earum vero sunt dignissimos
+        alias voluptatibus. Dolorum commodi, perferendis vero labore ipsa voluptatem voluptatum quas. Nihil, nemo
+        commodi?
+        Obcaecati aperiam recusandae vel, nobis dolores non velit maxime hic eos repellat eaque nisi! Magnam vero
+        voluptate sed atque recusandae. Ipsum cumque dicta earum distinctio aliquid suscipit atque neque non?
+        Et, officia ex impedit error sit alias praesentium dignissimos asperiores inventore, soluta delectus, cumque
+        facere non ipsa rerum sunt perferendis? Aliquam voluptates, fuga praesentium nostrum exercitationem iusto sequi
+        voluptatum necessitatibus!
+        Quae minus illo asperiores at accusantium assumenda sapiente impedit dolorum facilis unde animi obcaecati cum
+        itaque numquam sed esse consequatur eius dolor porro repellat nemo provident, qui iusto? Nam, officiis?
+        Placeat iste quisquam asperiores eaque dolorem, voluptatibus, ullam autem expedita, quibusdam laborum ratione
+        officiis dignissimos reprehenderit alias aperiam minima qui tempore debitis quam optio unde in enim! Cum, minima
+        ipsa.
+        ipsum illo?
+
+    </p>
+
+    <script>
+        $(document).ready(function()
+    {
+        $("#b1").click(function()
+     {
+        $("#my").toggle("fast")
+     })
+
+     $(".text").mouseover(function()
+    {
+        $(this).css({"transition":"2s","color":"pink","background":"gray"})
+    })
+
+    $(".text").mouseout(function()
+    {
+        $(this).css({"transition":"2s","color":"white","background":"pink"})
+    })
+    })
+    </script>
+
+
+
+
+</body>
+
+</html>
