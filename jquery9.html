@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    .toph{
+        background-color: antiquewhite;
+        text-align: center;
+    }
+    #inp{
+        background-color: aqua;
+        /* height: 30px; */
+        width: 30%;
+        margin: auto;
+        text-align: center;
+        padding: 30px;
+        margin-top: 50px;
+        border-radius: 12px;    }
+    #data{
+        /* background-color: red; */
+        margin-top: 60px;
+        font-size: 25px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+
+</style>
+<body>
+    <h1 class="toph">Jquery text(),html(),value()</h1>
+    <div id="inp">
+    <h2>User Name <input type="text" id="uname" value=""</h2>
+    <h2>User Age.. <input type="text" id="uage"</h2>
+    </div>
+    <br>
+    <p id="data">A tiny seed lay in the ground,Beneath the cold and frozen mound.It thought, "I'm small, I'm dark, I'm still —Can I become something that will fill?"</p>
+
+
+    <script>
+        $(document).ready(function()
+    {
+        $("#uname").click(function()
+    {
+        $(this).val("amit karakoti ji");
+    })
+
+    $("#uage").click(function()
+{
+    $(this).val("18");
+})
+
+    $("#data").click(function()
+{
+    $t = $(this).text()
+    $t = $(this).html("<h1 style='color:green; background:pink; width:80%; margin:auto; border-radius:12px;'>"+$t+"<h1/>")
+})
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.14.0-beta.1/jquery-ui.min.js"
+        integrity="sha256-eTKBotE66yiuQ4Th2m+9M00ivksRSCZHlphWprTOFls=" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+
+
+    <h1><input type="text" id="inp" placeholder="Enter your Name"></h1>
+</body>
+
+<script>
+    $(document).ready(function () {
+
+        $("#inp").change(function () {
+
+            let a = $("#inp").val()
+            a = a.toUpperCase()
+            $("#inp").val(a)
+        })
+        // console.log(a) 
+    })
+</script>
+
+</html>
