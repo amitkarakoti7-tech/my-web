@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body> 
+
+  <div class="p-4">
+    <h1 class="text-center">Accordion</h1>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header ">
+          <button class="accordion-button bg-warning-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            show1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur id dolorum placeat et laudantium maiores odit quasi, voluptatum aspernatur fuga natus hic. Quae minus aliquid, numquam ad porro minima delectus iure voluptas? Natus, dicta. Soluta deleniti perferendis earum eum eos quaerat debitis commodi provident optio?</p>
+          </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        show2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur id dolorum placeat et laudantium maiores odit quasi, voluptatum aspernatur fuga natus hic. Quae minus aliquid, numquam ad porro minima delectus iure voluptas? Natus, dicta. Soluta deleniti perferendis earum eum eos quaerat debitis commodi provident optio?</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-success-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        show3
+      </button>
+    </h2>
+    <div id="collapseThree " class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur id dolorum placeat et laudantium maiores odit quasi, voluptatum aspernatur fuga natus hic. Quae minus aliquid, numquam ad porro minima delectus iure voluptas? Natus, dicta. Soluta deleniti perferendis earum eum eos quaerat debitis commodi provident optio?</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>
